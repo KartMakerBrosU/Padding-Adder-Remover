@@ -1,12 +1,6 @@
-# TODO: error checknig for prereqs... use bash file to download?
 import cv2
 import numpy as np
 import sys
-
-# TODO:
-# O Some sort of shell script to use pip to get the necessary libraries.
-# O WINDOWS???
-# O Handle input errors. -> Obviously check for more.
 
 # Gets the ball rolling
 def main(PADDING_PIXELS, SIDE_LENGTH, FILE_NAME, NEW_FILE_NAME):
@@ -115,6 +109,7 @@ def prompt_user():
 
 def bail(message):
 	print("\n" + message)
+	input()
 	sys.exit()
 
 
